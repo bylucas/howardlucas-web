@@ -1,0 +1,38 @@
+// =======================
+// Button
+// =======================
+
+@use "../root/" as *;
+
+//Use a btn class for tags such as <a>
+#{$all-buttons},
+.btn {
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color $duration $timing;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  font-family: $heading-font;
+  letter-spacing: 0.03rem;
+  border: 0;
+  border-radius: $radius;
+  font-size: $third;
+  padding: 15px 20px;
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+//set the color and hover-color - see mixins
+#{$all-buttons},
+.btn {
+  @include button;
+}
