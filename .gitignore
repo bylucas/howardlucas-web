@@ -3,5 +3,5 @@
 .DS_Store?
 *.codekit3
 sftp-config.json
-node_modules
+*node_modules
 firestore/firestore-config.js
