@@ -4,4 +4,4 @@
 *.codekit3
 sftp-config.json
 node_modules
-test/firestore/firestore-config.js
+firestore/firestore-config.js

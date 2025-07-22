@@ -30,9 +30,31 @@ a {
     }
   }
 }
-
 .wrapper {
+  position: relative;
+}
+.main,
+footer {
   padding: $spacer 5%;
+}
+
+.header {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 30vh;
+  position: sticky;
+  top:-350px;
+  z-index: 20;
+  padding-top: 15px;
+}
+
+.main{
+  z-index: 10;
+  //margin-top: $spacer*8;
+  //position: absolute;
+  //top:-20px;
+  // width: 100%;
 }
 
 @include media(700) {
@@ -43,11 +65,32 @@ a {
   h4 {
     text-wrap: balance;
   }
+  .header {
+  height: 50vh;
+}
 }
 
 @include media(900) {
-  .wrapper {
-    max-width: 900px;
+  .header {
+  height: 60vh;
+}
+  .main,
+  footer {
+    max-width: 1100px;
     @include center;
+    //margin-top: -120px;
   }
+  
+}
+
+@include media(1300) {
+  .header {
+  height: 70vh;
+}
+}
+
+@include media(1900) {
+  .header {
+  height: 80vh;
+}
 }

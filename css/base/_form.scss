@@ -21,20 +21,20 @@ legend {
 
 #{$all-text-inputs} {
   appearance: none;
-  border: $border;
+  border: none;
   transition: border-color $duration $timing;
   width: 100%;
   font-size: $secondary;
   background-color: transparent;
-  border-radius: $radius;
-  box-shadow: inset 0 1px 2px rgba(#000, 0.26);
+  border-radius: 0;
+  //box-shadow: inset 0 1px 2px rgba(#000, 0.26);
   margin-bottom: calc($spacer / 2);
   padding: calc($spacer / 3);
 
   &:focus {
     border-color: $link-color;
-    border-width: 1.5px;
-    box-shadow: inset 0 1px 3px rgba(#000, 0.4);
+    //border-width: 1.5px;
+    //box-shadow: inset 0 1px 3px rgba(#000, 0.4);
   }
 
   &:disabled {
